@@ -1,4 +1,7 @@
+// ignore_for_file: dead_code
+
 import 'package:flutter/material.dart';
+import 'package:rabit_project/features/ui/screens/HomeScreen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,6 +12,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Cairo', primarySwatch: Colors.pink),
+      home: HomeScreen(),
+    );
   }
 }
