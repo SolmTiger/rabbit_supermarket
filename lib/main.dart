@@ -1,7 +1,7 @@
 // ignore_for_file: dead_code
 
 import 'package:flutter/material.dart';
-import 'package:rabit_project/features/ui/screens/HomeScreen.dart';
+import 'package:rabit_project/features/ui/screens/Setting_Screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Cairo', primarySwatch: Colors.pink),
-      home: HomeScreen(),
+      home: settingPage(),
     );
   }
 }
